@@ -1,0 +1,140 @@
+[2021-08-23T23:24:05.928] [ERROR] - 91 nodesdk:DefaultHttpClient:4 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:DELETE|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn%3Afss%3Acn-north-4%3A0bcc05efb100f2a92f53c011f262dfa0%3Afunction%3Adefault%3Afunction_test_node/||host:functiongraph.cn-north-4.myhuaweicloud.com|x-project-id:0bcc05efb100f2a92f53c011f262dfa0|x-sdk-date:20210824T032405Z||host;x-project-id;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: '3d03fab5a03970cf75f198b3d38fa2cf'
+  },
+  status: 401,
+  headers: {
+    date: 'Tue, 24 Aug 2021 03:24:05 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': '3d03fab5a03970cf75f198b3d38fa2cf'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
+    method: 'delete',
+    data: '{}',
+    headers: {
+      Accept: 'application/json',
+      'content-type': 'application/json',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'X-Sdk-Date': '20210824T032405Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=99a63120f3f89d91600f2905d71aace7bf04b568133d1735a1c4482986347b7e',
+      'User-Agent': 'huaweicloud-usdk-nodejs/3.0',
+      'Content-Length': 2
+    },
+    proxy: false,
+    params: {},
+    transformRequest: [ [Function: bound ] ],
+    transformResponse: [ [Function: transformResponse] ],
+    paramsSerializer: [Function: paramsSerializer],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: Infinity,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/createError.js:16:15)
+      at settle (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
+      method: 'delete',
+      data: '{}',
+      headers: [Object],
+      proxy: false,
+      params: {},
+      transformRequest: [Array],
+      transformResponse: [Array],
+      paramsSerializer: [Function: paramsSerializer],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: Infinity,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [TLSSocket],
+      _header: 'DELETE /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node HTTP/1.1\r\n' +
+        'Accept: application/json\r\n' +
+        'content-type: application/json\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'X-Sdk-Date: 20210824T032405Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=99a63120f3f89d91600f2905d71aace7bf04b568133d1735a1c4482986347b7e\r\n' +
+        'User-Agent: huaweicloud-usdk-nodejs/3.0\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'DELETE',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: '3d03fab5a03970cf75f198b3d38fa2cf'
+}
+
