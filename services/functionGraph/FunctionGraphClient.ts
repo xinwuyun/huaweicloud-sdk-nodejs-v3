@@ -9,6 +9,9 @@ import { GetFunctionListResponse } from "./model/GetFunctionListResponse";
 import { UpdateFunctionRequest } from "./model/UpdateFunctionRequest";
 import { UpdateFunctionResponse } from "./model/UpdateFunctionResponse";
 import { DeleteFunctionRequest } from "./model/DeleteFunctionRequest";
+import { UpdateFunctionConfigRequestBody } from "./model/UpdateFunctionConfigRequestBody";
+import { UpdateFunctionConfigRequest } from "./model/UpdateFunctionConfigRequest";
+import { UpdateFunctionConfigResponse } from "./model/UpdateFunctionConfigResponse";
 
 export class FunctionGraphClient {
     public static newBuilder(): ClientBuilder<FunctionGraphClient> {
@@ -34,7 +37,7 @@ export class FunctionGraphClient {
         return this.hcClient.sendRequest(options);
     }
     /**
-     * 更新函数
+     * 更新函数代码
      * @param updateFuncionRequest 
      * @returns 
      */
@@ -44,11 +47,18 @@ export class FunctionGraphClient {
         return this.hcClient.sendRequest(options);
     }
 
+
+    public updateFunctionConfig(updateFunctionConfigRequest: UpdateFunctionConfigRequest): Promise<UpdateFunctionConfigResponse>{
+        const options = ParamCreater().updateFunctionConfig(updateFunctionConfigRequest);    
+        options['responseHeader'] = ['']
+        return this.hcClient.sendRequest(options);
+    }
+
     /**
      * 删除函数
      * @param deleteFunctionRequest 
      */
-    public deleteFunction(deleteFunctionRequest: DeleteFunctionRequest){
+    public deleteFunction(deleteFunctionRequest: DeleteFunctionRequest): Promise<any>{
         const options = ParamCreater().deleteFunction(deleteFunctionRequest);
         options['responseHeader'] = [''];
         return this.hcClient.sendRequest(options);
@@ -145,6 +155,41 @@ export const ParamCreater = function () {
             options.pathParams = { 'function_urn': func_urn}
             return options;
         },
+
+        updateFunctionConfig(updateFunctionConfigRequest?: UpdateFunctionConfigRequest) {
+            const options = {
+                method: "PUT",
+                url: "/v2/{project_id}/fgs/functions/{function_urn}/config",
+                contentType: "application/json",
+                queryParams: {},
+                pathParams: {},
+                headers: {},
+                data: {}
+            }
+            const localVarHeaderParameter = {} as any;
+            var body: any;
+            let func_urn: any;
+            if (updateFunctionConfigRequest !== null && updateFunctionConfigRequest !== undefined) {
+                if (updateFunctionConfigRequest instanceof UpdateFunctionConfigRequest) {
+                    body = updateFunctionConfigRequest.body;
+                    func_urn = updateFunctionConfigRequest.func_urn;
+                } else {
+                    body = updateFunctionConfigRequest['body'];
+                    func_urn = updateFunctionConfigRequest['func_urn'];
+                }
+            }
+
+            if(body === null || body === undefined) {
+                throw new RequiredError('body', 'Required parameter body')
+            }
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            options.data = body !== undefined ? body : {};
+            options.pathParams = { 'function_urn': func_urn}
+            options.headers = localVarHeaderParameter;
+            return options;
+        },
+
         /**
          * 此接口用于获取函数列表
          */

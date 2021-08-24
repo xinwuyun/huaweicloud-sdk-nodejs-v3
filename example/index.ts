@@ -1,5 +1,5 @@
-import { BasicCredentials } from "@huaweicloud/huaweicloud-sdk-core/auth/BasicCredentials";
-import { GlobalCredentials } from "@huaweicloud/huaweicloud-sdk-core/auth/GlobalCredentials";
+import { BasicCredentials } from "../core/auth/BasicCredentials";
+import { GlobalCredentials } from "../core/auth/GlobalCredentials";
 
 import { FunctionGraphClient } from '../services/functionGraph/FunctionGraphClient'
 import { CreateFunctionRequest } from '../services/functionGraph/model/CreateFunctionRequest'
@@ -11,7 +11,8 @@ import { UpdateFunctionRequest } from '../services/functionGraph/model/UpdateFun
 import { UpdateFunctionRequestBody } from '../services/functionGraph/model/UpdateFunctionRequestBody'
 import { DeleteFunctionRequest } from '../services/functionGraph/model/DeleteFunctionRequest'
 import express = require('express')
-
+import { UpdateFunctionConfigRequestBody } from "../services/functionGraph/model/UpdateFunctionConfigRequestBody";
+import { UpdateFunctionConfigRequest } from "../services/functionGraph/model/UpdateFunctionConfigRequest";
 
 
 const ak = '6T9ZUN0WWK4SDIAWJVOJ';
@@ -42,6 +43,32 @@ app.get('/createFunction', async function(req: any, res: { send: (arg0: string) 
     })
     .withFunctionCode(await startZip("./src"))
     const result = client.createFunction(new CreateFunctionRequest()
+        .withBody(body))
+    result.then(result => {
+        res.send("JSON.stringify(result)::" + JSON.stringify(result))
+    }).catch(ex => {
+        res.send("exception:" + JSON.stringify(ex))
+    });
+})
+app.get('/updateFunctionConfig', async function(req: any, res: { send: (arg0: string) => void;}){
+    const app: express.Application = express();
+    const client = FunctionGraphClient.newBuilder()
+        .withCredential(new BasicCredentials()
+            .withAk(ak)
+            .withSk(sk)
+            .withProjectId(projectId)
+        )
+        .withEndpoint('https://functiongraph.cn-north-4.myhuaweicloud.com') //https://developer.huaweicloud.com/endpoint?FunctionGraph
+        .build();
+    const body = new UpdateFunctionConfigRequestBody({
+        func_name: "function_test_node",
+        handler: "index.handler",
+        memory_size: 128,
+        timeout: 30,
+        runtime: "Node.js12.13",
+    })
+    const result = client.updateFunctionConfig(new UpdateFunctionConfigRequest()
+        .withFunctionUrn("urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node:latest")
         .withBody(body))
     result.then(result => {
         res.send("JSON.stringify(result)::" + JSON.stringify(result))
