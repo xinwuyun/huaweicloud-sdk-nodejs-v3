@@ -1,737 +1,140 @@
-[2021-08-23T23:24:05.928] [ERROR] - 91 nodesdk:DefaultHttpClient:4 some error found: {
+[2021-08-25T00:29:19.169] [INFO] - 71 nodesdk:HcClient:1 Error: connect ECONNREFUSED 127.0.0.1:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1133:16)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:131:17) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 443
+}
+
+[2021-08-25T00:30:36.638] [INFO] - 71 nodesdk:HcClient:3 Error: connect ECONNREFUSED 127.0.0.1:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1133:16)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:131:17) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 443
+}
+
+[2021-08-25T00:36:21.463] [INFO] - 71 nodesdk:HcClient:1 Error: connect ECONNREFUSED 127.0.0.1:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1133:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 443
+}
+
+[2021-08-25T01:17:23.357] [INFO] - 71 nodesdk:HcClient:1 {"error_msg":"Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:POST|\/v2\/0bcc05efb100f2a92f53c011f262dfa0\/fgs\/functions\/||content-type:application\/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210824T171704Z||content-type;host;x-sdk-date|e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error_code":"APIGW.0301","request_id":"07ee80c7ae809a8a219cd343df9dbc74"}
+
+
+[2021-08-25T01:18:26.795] [INFO] - 71 nodesdk:HcClient:1 {"error_msg":"Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:POST|\/v2\/0bcc05efb100f2a92f53c011f262dfa0\/fgs\/functions\/||content-type:application\/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210824T171826Z||content-type;host;x-sdk-date|e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error_code":"APIGW.0301","request_id":"a1c98ba621a14de6438c87eea0729089"}
+
+
+[2021-08-25T01:19:11.503] [INFO] - 71 nodesdk:HcClient:3 {"error_msg":"Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:POST|\/v2\/0bcc05efb100f2a92f53c011f262dfa0\/fgs\/functions\/||content-type:application\/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210824T171911Z||content-type;host;x-sdk-date|e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error_code":"APIGW.0301","request_id":"44ebc6ca04f8c7e8f025511a619909d4"}
+
+
+[2021-08-25T01:21:26.569] [INFO] - 71 nodesdk:HcClient:1 {"error_msg":"Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:POST|\/v2\/0bcc05efb100f2a92f53c011f262dfa0\/fgs\/functions\/||content-type:application\/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210824T172126Z||content-type;host;x-sdk-date|e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error_code":"APIGW.0301","request_id":"3975fc5c8d1c13b584ffba6e0778edbc"}
+
+
+[2021-08-25T01:25:21.957] [INFO] - 71 nodesdk:HcClient:1 {"error_msg":"Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:POST|\/v2\/0bcc05efb100f2a92f53c011f262dfa0\/fgs\/functions\/||content-type:application\/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210824T172521Z||content-type;host;x-sdk-date|e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error_code":"APIGW.0301","request_id":"9b43fd72592f6b39aab3c6ee52ccd1b2"}
+
+
+[2021-08-25T13:23:30.114] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
+  data: undefined,
+  status: undefined,
+  headers: undefined,
+  message: "Cannot read property 'endpoint' of undefined",
+  config: undefined,
+  originalError: TypeError: Cannot read property 'endpoint' of undefined
+      at DefaultHttpClient.<anonymous> (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:136:75)
+      at step (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:53:23)
+      at Object.next (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:34:53)
+      at /run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:28:71
+      at new Promise (<anonymous>)
+      at __awaiter (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:24:12)
+      at DefaultHttpClient._request (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:148:16)
+      at DefaultHttpClient.sendRequest (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:115:21)
+      at HcClient.sendRequest (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/HcClient.ts:47:32)
+      at FunctionGraphClient.createFunction (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/services/functionGraph/FunctionGraphClient.ts:38:30),
+  requestId: undefined
+}
+
+[2021-08-25T13:26:57.549] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
+  data: undefined,
+  status: undefined,
+  headers: undefined,
+  message: "Cannot read property 'endpoint' of undefined",
+  config: undefined,
+  originalError: TypeError: Cannot read property 'endpoint' of undefined
+      at DefaultHttpClient.<anonymous> (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:136:75)
+      at step (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:53:23)
+      at Object.next (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:34:53)
+      at /run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:28:71
+      at new Promise (<anonymous>)
+      at __awaiter (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:24:12)
+      at DefaultHttpClient._request (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:148:16)
+      at DefaultHttpClient.sendRequest (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:115:21)
+      at HcClient.sendRequest (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/HcClient.ts:47:32)
+      at FunctionGraphClient.getFunctionList (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/services/functionGraph/FunctionGraphClient.ts:76:30),
+  requestId: undefined
+}
+
+[2021-08-25T13:44:54.125] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
+  data: undefined,
+  status: undefined,
+  headers: undefined,
+  message: "Cannot read property 'endpoint' of undefined",
+  config: undefined,
+  originalError: TypeError: Cannot read property 'endpoint' of undefined
+      at DefaultHttpClient.<anonymous> (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:136:75)
+      at step (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:53:23)
+      at Object.next (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:34:53)
+      at /run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:28:71
+      at new Promise (<anonymous>)
+      at __awaiter (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:24:12)
+      at DefaultHttpClient._request (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:148:16)
+      at DefaultHttpClient.sendRequest (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/http/DefaultHttpClient.ts:115:21)
+      at HcClient.sendRequest (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/core/HcClient.ts:47:32)
+      at FunctionGraphClient.getFunctionList (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/services/functionGraph/FunctionGraphClient.ts:76:30),
+  requestId: undefined
+}
+
+[2021-08-25T13:47:51.171] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
   data: {
-    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:DELETE|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn%3Afss%3Acn-north-4%3A0bcc05efb100f2a92f53c011f262dfa0%3Afunction%3Adefault%3Afunction_test_node/||host:functiongraph.cn-north-4.myhuaweicloud.com|x-project-id:0bcc05efb100f2a92f53c011f262dfa0|x-sdk-date:20210824T032405Z||host;x-project-id;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T054743Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
     error_code: 'APIGW.0301',
-    request_id: '3d03fab5a03970cf75f198b3d38fa2cf'
+    request_id: '31f4095112bd9c7ea02c4fa41495af83'
   },
   status: 401,
   headers: {
-    date: 'Tue, 24 Aug 2021 03:24:05 GMT',
+    date: 'Wed, 25 Aug 2021 05:47:51 GMT',
     'content-type': 'application/json',
     'transfer-encoding': 'chunked',
     connection: 'close',
     server: 'api-gateway',
-    'x-request-id': '3d03fab5a03970cf75f198b3d38fa2cf'
+    'x-request-id': '31f4095112bd9c7ea02c4fa41495af83'
   },
   message: 'Request failed with status code 401',
   config: {
-    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-    method: 'delete',
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
     data: '{}',
     headers: {
       Accept: 'application/json',
-      'content-type': 'application/json',
-      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
-      'X-Sdk-Date': '20210824T032405Z',
-      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=99a63120f3f89d91600f2905d71aace7bf04b568133d1735a1c4482986347b7e',
-      'User-Agent': 'huaweicloud-usdk-nodejs/3.0',
-      'Content-Length': 2
-    },
-    proxy: false,
-    params: {},
-    transformRequest: [ [Function: bound ] ],
-    transformResponse: [ [Function: transformResponse] ],
-    paramsSerializer: [Function: paramsSerializer],
-    timeout: 0,
-    adapter: [Function: httpAdapter],
-    xsrfCookieName: 'XSRF-TOKEN',
-    xsrfHeaderName: 'X-XSRF-TOKEN',
-    maxContentLength: Infinity,
-    maxBodyLength: -1,
-    validateStatus: [Function: validateStatus]
-  },
-  originalError: Error: Request failed with status code 401
-      at createError (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/createError.js:16:15)
-      at settle (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/settle.js:17:12)
-      at IncomingMessage.handleStreamEnd (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/adapters/http.js:260:11)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1327:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21) {
-    config: {
-      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-      method: 'delete',
-      data: '{}',
-      headers: [Object],
-      proxy: false,
-      params: {},
-      transformRequest: [Array],
-      transformResponse: [Array],
-      paramsSerializer: [Function: paramsSerializer],
-      timeout: 0,
-      adapter: [Function: httpAdapter],
-      xsrfCookieName: 'XSRF-TOKEN',
-      xsrfHeaderName: 'X-XSRF-TOKEN',
-      maxContentLength: Infinity,
-      maxBodyLength: -1,
-      validateStatus: [Function: validateStatus]
-    },
-    request: ClientRequest {
-      _events: [Object: null prototype],
-      _eventsCount: 7,
-      _maxListeners: undefined,
-      outputData: [],
-      outputSize: 0,
-      writable: true,
-      destroyed: false,
-      _last: true,
-      chunkedEncoding: false,
-      shouldKeepAlive: false,
-      _defaultKeepAlive: true,
-      useChunkedEncodingByDefault: false,
-      sendDate: false,
-      _removedConnection: false,
-      _removedContLen: false,
-      _removedTE: false,
-      _contentLength: null,
-      _hasBody: true,
-      _trailer: '',
-      finished: true,
-      _headerSent: true,
-      socket: [TLSSocket],
-      _header: 'DELETE /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node HTTP/1.1\r\n' +
-        'Accept: application/json\r\n' +
-        'content-type: application/json\r\n' +
-        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
-        'X-Sdk-Date: 20210824T032405Z\r\n' +
-        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
-        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=99a63120f3f89d91600f2905d71aace7bf04b568133d1735a1c4482986347b7e\r\n' +
-        'User-Agent: huaweicloud-usdk-nodejs/3.0\r\n' +
-        'Content-Length: 2\r\n' +
-        'Connection: close\r\n' +
-        '\r\n',
-      _keepAliveTimeout: 0,
-      _onPendingData: [Function: noopPendingOutput],
-      agent: [Agent],
-      socketPath: undefined,
-      method: 'DELETE',
-      maxHeaderSize: undefined,
-      insecureHTTPParser: undefined,
-      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-      _ended: true,
-      res: [IncomingMessage],
-      aborted: false,
-      timeoutCb: null,
-      upgradeOrConnect: false,
-      parser: null,
-      maxHeadersCount: null,
-      reusedSocket: false,
-      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      protocol: 'https:',
-      _redirectable: [Writable],
-      [Symbol(kCapture)]: false,
-      [Symbol(kNeedDrain)]: false,
-      [Symbol(corked)]: 0,
-      [Symbol(kOutHeaders)]: [Object: null prototype]
-    },
-    response: {
-      status: 401,
-      statusText: 'Unauthorized',
-      headers: [Object],
-      config: [Object],
-      request: [ClientRequest],
-      data: [Object]
-    },
-    isAxiosError: true,
-    toJSON: [Function: toJSON]
-  },
-  requestId: '3d03fab5a03970cf75f198b3d38fa2cf'
-}
-
-[2021-08-23T23:27:22.785] [ERROR] - 91 nodesdk:DefaultHttpClient:0 some error found: {
-  data: {
-    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:DELETE|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn%3Afss%3Acn-north-4%3A0bcc05efb100f2a92f53c011f262dfa0%3Afunction%3Adefault%3Afunction_test_node/||host:functiongraph.cn-north-4.myhuaweicloud.com|x-project-id:0bcc05efb100f2a92f53c011f262dfa0|x-sdk-date:20210824T032722Z||host;x-project-id;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
-    error_code: 'APIGW.0301',
-    request_id: 'a6400d429115d658343c2050a7062b4e'
-  },
-  status: 401,
-  headers: {
-    date: 'Tue, 24 Aug 2021 03:27:22 GMT',
-    'content-type': 'application/json',
-    'transfer-encoding': 'chunked',
-    connection: 'close',
-    server: 'api-gateway',
-    'x-request-id': 'a6400d429115d658343c2050a7062b4e'
-  },
-  message: 'Request failed with status code 401',
-  config: {
-    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-    method: 'delete',
-    data: '{}',
-    headers: {
-      Accept: 'application/json',
-      'content-type': 'application/json',
-      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
-      'X-Sdk-Date': '20210824T032722Z',
-      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=9b7a1f0dfcda233cf5aada8fb6e9fa1bc9f27e96d934e29cba193fc84082d030',
-      'User-Agent': 'huaweicloud-usdk-nodejs/3.0',
-      'Content-Length': 2
-    },
-    proxy: false,
-    params: {},
-    transformRequest: [ [Function: bound ] ],
-    transformResponse: [ [Function: transformResponse] ],
-    paramsSerializer: [Function: paramsSerializer],
-    timeout: 0,
-    adapter: [Function: httpAdapter],
-    xsrfCookieName: 'XSRF-TOKEN',
-    xsrfHeaderName: 'X-XSRF-TOKEN',
-    maxContentLength: Infinity,
-    maxBodyLength: -1,
-    validateStatus: [Function: validateStatus]
-  },
-  originalError: Error: Request failed with status code 401
-      at createError (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/createError.js:16:15)
-      at settle (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/settle.js:17:12)
-      at IncomingMessage.handleStreamEnd (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/adapters/http.js:260:11)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1327:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21) {
-    config: {
-      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-      method: 'delete',
-      data: '{}',
-      headers: [Object],
-      proxy: false,
-      params: {},
-      transformRequest: [Array],
-      transformResponse: [Array],
-      paramsSerializer: [Function: paramsSerializer],
-      timeout: 0,
-      adapter: [Function: httpAdapter],
-      xsrfCookieName: 'XSRF-TOKEN',
-      xsrfHeaderName: 'X-XSRF-TOKEN',
-      maxContentLength: Infinity,
-      maxBodyLength: -1,
-      validateStatus: [Function: validateStatus]
-    },
-    request: ClientRequest {
-      _events: [Object: null prototype],
-      _eventsCount: 7,
-      _maxListeners: undefined,
-      outputData: [],
-      outputSize: 0,
-      writable: true,
-      destroyed: false,
-      _last: true,
-      chunkedEncoding: false,
-      shouldKeepAlive: false,
-      _defaultKeepAlive: true,
-      useChunkedEncodingByDefault: false,
-      sendDate: false,
-      _removedConnection: false,
-      _removedContLen: false,
-      _removedTE: false,
-      _contentLength: null,
-      _hasBody: true,
-      _trailer: '',
-      finished: true,
-      _headerSent: true,
-      socket: [TLSSocket],
-      _header: 'DELETE /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node HTTP/1.1\r\n' +
-        'Accept: application/json\r\n' +
-        'content-type: application/json\r\n' +
-        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
-        'X-Sdk-Date: 20210824T032722Z\r\n' +
-        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
-        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=9b7a1f0dfcda233cf5aada8fb6e9fa1bc9f27e96d934e29cba193fc84082d030\r\n' +
-        'User-Agent: huaweicloud-usdk-nodejs/3.0\r\n' +
-        'Content-Length: 2\r\n' +
-        'Connection: close\r\n' +
-        '\r\n',
-      _keepAliveTimeout: 0,
-      _onPendingData: [Function: noopPendingOutput],
-      agent: [Agent],
-      socketPath: undefined,
-      method: 'DELETE',
-      maxHeaderSize: undefined,
-      insecureHTTPParser: undefined,
-      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-      _ended: true,
-      res: [IncomingMessage],
-      aborted: false,
-      timeoutCb: null,
-      upgradeOrConnect: false,
-      parser: null,
-      maxHeadersCount: null,
-      reusedSocket: false,
-      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      protocol: 'https:',
-      _redirectable: [Writable],
-      [Symbol(kCapture)]: false,
-      [Symbol(kNeedDrain)]: false,
-      [Symbol(corked)]: 0,
-      [Symbol(kOutHeaders)]: [Object: null prototype]
-    },
-    response: {
-      status: 401,
-      statusText: 'Unauthorized',
-      headers: [Object],
-      config: [Object],
-      request: [ClientRequest],
-      data: [Object]
-    },
-    isAxiosError: true,
-    toJSON: [Function: toJSON]
-  },
-  requestId: 'a6400d429115d658343c2050a7062b4e'
-}
-
-[2021-08-23T23:28:04.793] [ERROR] - 91 nodesdk:DefaultHttpClient:0 some error found: {
-  data: {
-    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:DELETE|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn%3Afss%3Acn-north-4%3A0bcc05efb100f2a92f53c011f262dfa0%3Afunction%3Adefault%3Afunction_test_node/||host:functiongraph.cn-north-4.myhuaweicloud.com|x-project-id:0bcc05efb100f2a92f53c011f262dfa0|x-sdk-date:20210824T032804Z||host;x-project-id;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
-    error_code: 'APIGW.0301',
-    request_id: '09185309637732881c97b92bfafc38d5'
-  },
-  status: 401,
-  headers: {
-    date: 'Tue, 24 Aug 2021 03:28:04 GMT',
-    'content-type': 'application/json',
-    'transfer-encoding': 'chunked',
-    connection: 'close',
-    server: 'api-gateway',
-    'x-request-id': '09185309637732881c97b92bfafc38d5'
-  },
-  message: 'Request failed with status code 401',
-  config: {
-    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-    method: 'delete',
-    data: '{}',
-    headers: {
-      Accept: 'application/json',
-      'content-type': 'application/json',
-      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
-      'X-Sdk-Date': '20210824T032804Z',
-      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=b79f386a20c739147fb3d2146cf876869b0f4a004e2c4fb2d71b567b1b4cc529',
-      'User-Agent': 'huaweicloud-usdk-nodejs/3.0',
-      'Content-Length': 2
-    },
-    proxy: false,
-    params: {},
-    transformRequest: [ [Function: bound ] ],
-    transformResponse: [ [Function: transformResponse] ],
-    paramsSerializer: [Function: paramsSerializer],
-    timeout: 0,
-    adapter: [Function: httpAdapter],
-    xsrfCookieName: 'XSRF-TOKEN',
-    xsrfHeaderName: 'X-XSRF-TOKEN',
-    maxContentLength: Infinity,
-    maxBodyLength: -1,
-    validateStatus: [Function: validateStatus]
-  },
-  originalError: Error: Request failed with status code 401
-      at createError (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/createError.js:16:15)
-      at settle (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/settle.js:17:12)
-      at IncomingMessage.handleStreamEnd (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/adapters/http.js:260:11)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1327:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21) {
-    config: {
-      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-      method: 'delete',
-      data: '{}',
-      headers: [Object],
-      proxy: false,
-      params: {},
-      transformRequest: [Array],
-      transformResponse: [Array],
-      paramsSerializer: [Function: paramsSerializer],
-      timeout: 0,
-      adapter: [Function: httpAdapter],
-      xsrfCookieName: 'XSRF-TOKEN',
-      xsrfHeaderName: 'X-XSRF-TOKEN',
-      maxContentLength: Infinity,
-      maxBodyLength: -1,
-      validateStatus: [Function: validateStatus]
-    },
-    request: ClientRequest {
-      _events: [Object: null prototype],
-      _eventsCount: 7,
-      _maxListeners: undefined,
-      outputData: [],
-      outputSize: 0,
-      writable: true,
-      destroyed: false,
-      _last: true,
-      chunkedEncoding: false,
-      shouldKeepAlive: false,
-      _defaultKeepAlive: true,
-      useChunkedEncodingByDefault: false,
-      sendDate: false,
-      _removedConnection: false,
-      _removedContLen: false,
-      _removedTE: false,
-      _contentLength: null,
-      _hasBody: true,
-      _trailer: '',
-      finished: true,
-      _headerSent: true,
-      socket: [TLSSocket],
-      _header: 'DELETE /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node HTTP/1.1\r\n' +
-        'Accept: application/json\r\n' +
-        'content-type: application/json\r\n' +
-        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
-        'X-Sdk-Date: 20210824T032804Z\r\n' +
-        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
-        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=b79f386a20c739147fb3d2146cf876869b0f4a004e2c4fb2d71b567b1b4cc529\r\n' +
-        'User-Agent: huaweicloud-usdk-nodejs/3.0\r\n' +
-        'Content-Length: 2\r\n' +
-        'Connection: close\r\n' +
-        '\r\n',
-      _keepAliveTimeout: 0,
-      _onPendingData: [Function: noopPendingOutput],
-      agent: [Agent],
-      socketPath: undefined,
-      method: 'DELETE',
-      maxHeaderSize: undefined,
-      insecureHTTPParser: undefined,
-      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-      _ended: true,
-      res: [IncomingMessage],
-      aborted: false,
-      timeoutCb: null,
-      upgradeOrConnect: false,
-      parser: null,
-      maxHeadersCount: null,
-      reusedSocket: false,
-      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      protocol: 'https:',
-      _redirectable: [Writable],
-      [Symbol(kCapture)]: false,
-      [Symbol(kNeedDrain)]: false,
-      [Symbol(corked)]: 0,
-      [Symbol(kOutHeaders)]: [Object: null prototype]
-    },
-    response: {
-      status: 401,
-      statusText: 'Unauthorized',
-      headers: [Object],
-      config: [Object],
-      request: [ClientRequest],
-      data: [Object]
-    },
-    isAxiosError: true,
-    toJSON: [Function: toJSON]
-  },
-  requestId: '09185309637732881c97b92bfafc38d5'
-}
-
-[2021-08-23T23:28:24.498] [ERROR] - 91 nodesdk:DefaultHttpClient:4 some error found: {
-  data: {
-    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:DELETE|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn%3Afss%3Acn-north-4%3A0bcc05efb100f2a92f53c011f262dfa0%3Afunction%3Adefault%3Afunction_test_node/||host:functiongraph.cn-north-4.myhuaweicloud.com|x-project-id:0bcc05efb100f2a92f53c011f262dfa0|x-sdk-date:20210824T032824Z||host;x-project-id;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
-    error_code: 'APIGW.0301',
-    request_id: '778895d920ac4254f0dda999a5c5ac82'
-  },
-  status: 401,
-  headers: {
-    date: 'Tue, 24 Aug 2021 03:28:24 GMT',
-    'content-type': 'application/json',
-    'transfer-encoding': 'chunked',
-    connection: 'close',
-    server: 'api-gateway',
-    'x-request-id': '778895d920ac4254f0dda999a5c5ac82'
-  },
-  message: 'Request failed with status code 401',
-  config: {
-    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-    method: 'delete',
-    data: '{}',
-    headers: {
-      Accept: 'application/json',
-      'content-type': 'application/json',
-      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
-      'X-Sdk-Date': '20210824T032824Z',
-      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=83017219c2bb4a855a5f68615cee41e5e9f984a0360d0e7b4c028821fe1d62c0',
-      'User-Agent': 'huaweicloud-usdk-nodejs/3.0',
-      'Content-Length': 2
-    },
-    proxy: false,
-    params: {},
-    transformRequest: [ [Function: bound ] ],
-    transformResponse: [ [Function: transformResponse] ],
-    paramsSerializer: [Function: paramsSerializer],
-    timeout: 0,
-    adapter: [Function: httpAdapter],
-    xsrfCookieName: 'XSRF-TOKEN',
-    xsrfHeaderName: 'X-XSRF-TOKEN',
-    maxContentLength: Infinity,
-    maxBodyLength: -1,
-    validateStatus: [Function: validateStatus]
-  },
-  originalError: Error: Request failed with status code 401
-      at createError (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/createError.js:16:15)
-      at settle (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/settle.js:17:12)
-      at IncomingMessage.handleStreamEnd (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/adapters/http.js:260:11)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1327:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21) {
-    config: {
-      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-      method: 'delete',
-      data: '{}',
-      headers: [Object],
-      proxy: false,
-      params: {},
-      transformRequest: [Array],
-      transformResponse: [Array],
-      paramsSerializer: [Function: paramsSerializer],
-      timeout: 0,
-      adapter: [Function: httpAdapter],
-      xsrfCookieName: 'XSRF-TOKEN',
-      xsrfHeaderName: 'X-XSRF-TOKEN',
-      maxContentLength: Infinity,
-      maxBodyLength: -1,
-      validateStatus: [Function: validateStatus]
-    },
-    request: ClientRequest {
-      _events: [Object: null prototype],
-      _eventsCount: 7,
-      _maxListeners: undefined,
-      outputData: [],
-      outputSize: 0,
-      writable: true,
-      destroyed: false,
-      _last: true,
-      chunkedEncoding: false,
-      shouldKeepAlive: false,
-      _defaultKeepAlive: true,
-      useChunkedEncodingByDefault: false,
-      sendDate: false,
-      _removedConnection: false,
-      _removedContLen: false,
-      _removedTE: false,
-      _contentLength: null,
-      _hasBody: true,
-      _trailer: '',
-      finished: true,
-      _headerSent: true,
-      socket: [TLSSocket],
-      _header: 'DELETE /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node HTTP/1.1\r\n' +
-        'Accept: application/json\r\n' +
-        'content-type: application/json\r\n' +
-        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
-        'X-Sdk-Date: 20210824T032824Z\r\n' +
-        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
-        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=83017219c2bb4a855a5f68615cee41e5e9f984a0360d0e7b4c028821fe1d62c0\r\n' +
-        'User-Agent: huaweicloud-usdk-nodejs/3.0\r\n' +
-        'Content-Length: 2\r\n' +
-        'Connection: close\r\n' +
-        '\r\n',
-      _keepAliveTimeout: 0,
-      _onPendingData: [Function: noopPendingOutput],
-      agent: [Agent],
-      socketPath: undefined,
-      method: 'DELETE',
-      maxHeaderSize: undefined,
-      insecureHTTPParser: undefined,
-      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-      _ended: true,
-      res: [IncomingMessage],
-      aborted: false,
-      timeoutCb: null,
-      upgradeOrConnect: false,
-      parser: null,
-      maxHeadersCount: null,
-      reusedSocket: false,
-      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      protocol: 'https:',
-      _redirectable: [Writable],
-      [Symbol(kCapture)]: false,
-      [Symbol(kNeedDrain)]: false,
-      [Symbol(corked)]: 0,
-      [Symbol(kOutHeaders)]: [Object: null prototype]
-    },
-    response: {
-      status: 401,
-      statusText: 'Unauthorized',
-      headers: [Object],
-      config: [Object],
-      request: [ClientRequest],
-      data: [Object]
-    },
-    isAxiosError: true,
-    toJSON: [Function: toJSON]
-  },
-  requestId: '778895d920ac4254f0dda999a5c5ac82'
-}
-
-[2021-08-23T23:53:18.800] [ERROR] - 91 nodesdk:DefaultHttpClient:6 some error found: {
-  data: {
-    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:DELETE|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn%3Afss%3Acn-north-4%3A0bcc05efb100f2a92f53c011f262dfa0%3Afunction%3Adefault%3Afunction_test_node/||host:functiongraph.cn-north-4.myhuaweicloud.com|x-project-id:0bcc05efb100f2a92f53c011f262dfa0|x-sdk-date:20210824T035318Z||host;x-project-id;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
-    error_code: 'APIGW.0301',
-    request_id: 'fd747df8e9e004b7767c2579456b71dc'
-  },
-  status: 401,
-  headers: {
-    date: 'Tue, 24 Aug 2021 03:53:18 GMT',
-    'content-type': 'application/json',
-    'transfer-encoding': 'chunked',
-    connection: 'close',
-    server: 'api-gateway',
-    'x-request-id': 'fd747df8e9e004b7767c2579456b71dc'
-  },
-  message: 'Request failed with status code 401',
-  config: {
-    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-    method: 'delete',
-    data: '{}',
-    headers: {
-      Accept: 'application/json',
-      'content-type': 'application/json',
-      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
-      'X-Sdk-Date': '20210824T035318Z',
-      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=936fe78af60d6b725bd1764d437a1dae37735788479c6ca9321478eb0ac5101e',
-      'User-Agent': 'huaweicloud-usdk-nodejs/3.0',
-      'Content-Length': 2
-    },
-    proxy: false,
-    params: {},
-    transformRequest: [ [Function: bound ] ],
-    transformResponse: [ [Function: transformResponse] ],
-    paramsSerializer: [Function: paramsSerializer],
-    timeout: 0,
-    adapter: [Function: httpAdapter],
-    xsrfCookieName: 'XSRF-TOKEN',
-    xsrfHeaderName: 'X-XSRF-TOKEN',
-    maxContentLength: Infinity,
-    maxBodyLength: -1,
-    validateStatus: [Function: validateStatus]
-  },
-  originalError: Error: Request failed with status code 401
-      at createError (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/createError.js:16:15)
-      at settle (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/settle.js:17:12)
-      at IncomingMessage.handleStreamEnd (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/adapters/http.js:260:11)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1327:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21) {
-    config: {
-      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-      method: 'delete',
-      data: '{}',
-      headers: [Object],
-      proxy: false,
-      params: {},
-      transformRequest: [Array],
-      transformResponse: [Array],
-      paramsSerializer: [Function: paramsSerializer],
-      timeout: 0,
-      adapter: [Function: httpAdapter],
-      xsrfCookieName: 'XSRF-TOKEN',
-      xsrfHeaderName: 'X-XSRF-TOKEN',
-      maxContentLength: Infinity,
-      maxBodyLength: -1,
-      validateStatus: [Function: validateStatus]
-    },
-    request: ClientRequest {
-      _events: [Object: null prototype],
-      _eventsCount: 7,
-      _maxListeners: undefined,
-      outputData: [],
-      outputSize: 0,
-      writable: true,
-      destroyed: false,
-      _last: true,
-      chunkedEncoding: false,
-      shouldKeepAlive: false,
-      _defaultKeepAlive: true,
-      useChunkedEncodingByDefault: false,
-      sendDate: false,
-      _removedConnection: false,
-      _removedContLen: false,
-      _removedTE: false,
-      _contentLength: null,
-      _hasBody: true,
-      _trailer: '',
-      finished: true,
-      _headerSent: true,
-      socket: [TLSSocket],
-      _header: 'DELETE /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node HTTP/1.1\r\n' +
-        'Accept: application/json\r\n' +
-        'content-type: application/json\r\n' +
-        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
-        'X-Sdk-Date: 20210824T035318Z\r\n' +
-        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
-        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=936fe78af60d6b725bd1764d437a1dae37735788479c6ca9321478eb0ac5101e\r\n' +
-        'User-Agent: huaweicloud-usdk-nodejs/3.0\r\n' +
-        'Content-Length: 2\r\n' +
-        'Connection: close\r\n' +
-        '\r\n',
-      _keepAliveTimeout: 0,
-      _onPendingData: [Function: noopPendingOutput],
-      agent: [Agent],
-      socketPath: undefined,
-      method: 'DELETE',
-      maxHeaderSize: undefined,
-      insecureHTTPParser: undefined,
-      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-      _ended: true,
-      res: [IncomingMessage],
-      aborted: false,
-      timeoutCb: null,
-      upgradeOrConnect: false,
-      parser: null,
-      maxHeadersCount: null,
-      reusedSocket: false,
-      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      protocol: 'https:',
-      _redirectable: [Writable],
-      [Symbol(kCapture)]: false,
-      [Symbol(kNeedDrain)]: false,
-      [Symbol(corked)]: 0,
-      [Symbol(kOutHeaders)]: [Object: null prototype]
-    },
-    response: {
-      status: 401,
-      statusText: 'Unauthorized',
-      headers: [Object],
-      config: [Object],
-      request: [ClientRequest],
-      data: [Object]
-    },
-    isAxiosError: true,
-    toJSON: [Function: toJSON]
-  },
-  requestId: 'fd747df8e9e004b7767c2579456b71dc'
-}
-
-[2021-08-24T12:08:06.763] [ERROR] - 91 nodesdk:DefaultHttpClient:0 some error found: {
-  data: {
-    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:PUT|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn%3Afss%3Acn-north-4%3A0bcc05efb100f2a92f53c011f262dfa0%3Afunction%3Adefault%3Afunction_test_node%3Alatest/config/||content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-project-id:0bcc05efb100f2a92f53c011f262dfa0|x-sdk-date:20210824T040806Z||content-type;host;x-project-id;x-sdk-date|c71584989f040a33ce65a6a46aaa021762b18b78dcb4c036801bc8422af784e5',
-    error_code: 'APIGW.0301',
-    request_id: '3ce07e2f944d3bf58dbd36e27a04e0b2'
-  },
-  status: 401,
-  headers: {
-    date: 'Tue, 24 Aug 2021 04:08:06 GMT',
-    'content-type': 'application/json',
-    'transfer-encoding': 'chunked',
-    connection: 'close',
-    server: 'api-gateway',
-    'x-request-id': '3ce07e2f944d3bf58dbd36e27a04e0b2'
-  },
-  message: 'Request failed with status code 401',
-  config: {
-    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node:latest/config',
-    method: 'put',
-    data: '{"func_name":"function_test_node","handler":"index.handler","memory_size":128,"timeout":30,"runtime":"Node.js12.13"}',
-    headers: {
-      Accept: 'application/json',
-      'content-type': 'application/json',
       'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
       'Content-Type': 'application/json',
-      'X-Sdk-Date': '20210824T040806Z',
+      'X-Sdk-Date': '20210825T054743Z',
       host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-project-id;x-sdk-date, Signature=b99540e506887e9e38daca602c56798cb725fb617f03772d473ea835ab814a76',
-      'User-Agent': 'huaweicloud-usdk-nodejs/3.0',
-      'Content-Length': 116
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=4fae531165e7a80383397e1b8a871457b3dcbfdb2a72abc1a233ce395d480cad',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
     },
     proxy: false,
-    params: {},
-    transformRequest: [ [Function: bound ] ],
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
     transformResponse: [ [Function: transformResponse] ],
     paramsSerializer: [Function: paramsSerializer],
     timeout: 0,
@@ -743,19 +146,19 @@
     validateStatus: [Function: validateStatus]
   },
   originalError: Error: Request failed with status code 401
-      at createError (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/createError.js:16:15)
-      at settle (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/settle.js:17:12)
-      at IncomingMessage.handleStreamEnd (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/adapters/http.js:260:11)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1327:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
     config: {
-      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node:latest/config',
-      method: 'put',
-      data: '{"func_name":"function_test_node","handler":"index.handler","memory_size":128,"timeout":30,"runtime":"Node.js12.13"}',
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
       headers: [Object],
       proxy: false,
-      params: {},
+      params: [Object],
       transformRequest: [Array],
       transformResponse: [Array],
       paramsSerializer: [Function: paramsSerializer],
@@ -779,7 +182,7 @@
       chunkedEncoding: false,
       shouldKeepAlive: false,
       _defaultKeepAlive: true,
-      useChunkedEncodingByDefault: true,
+      useChunkedEncodingByDefault: false,
       sendDate: false,
       _removedConnection: false,
       _removedContLen: false,
@@ -789,26 +192,27 @@
       _trailer: '',
       finished: true,
       _headerSent: true,
+      _closed: false,
       socket: [TLSSocket],
-      _header: 'PUT /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node:latest/config HTTP/1.1\r\n' +
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
         'Accept: application/json\r\n' +
-        'Content-Type: application/json\r\n' +
         'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
-        'X-Sdk-Date: 20210824T040806Z\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T054743Z\r\n' +
         'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
-        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-project-id;x-sdk-date, Signature=b99540e506887e9e38daca602c56798cb725fb617f03772d473ea835ab814a76\r\n' +
-        'User-Agent: huaweicloud-usdk-nodejs/3.0\r\n' +
-        'Content-Length: 116\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=4fae531165e7a80383397e1b8a871457b3dcbfdb2a72abc1a233ce395d480cad\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
         'Connection: close\r\n' +
         '\r\n',
       _keepAliveTimeout: 0,
-      _onPendingData: [Function: noopPendingOutput],
+      _onPendingData: [Function: nop],
       agent: [Agent],
       socketPath: undefined,
-      method: 'PUT',
+      method: 'GET',
       maxHeaderSize: undefined,
       insecureHTTPParser: undefined,
-      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node:latest/config',
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
       _ended: true,
       res: [IncomingMessage],
       aborted: false,
@@ -836,43 +240,42 @@
     isAxiosError: true,
     toJSON: [Function: toJSON]
   },
-  requestId: '3ce07e2f944d3bf58dbd36e27a04e0b2'
+  requestId: '31f4095112bd9c7ea02c4fa41495af83'
 }
 
-[2021-08-24T12:08:12.349] [ERROR] - 91 nodesdk:DefaultHttpClient:2 some error found: {
+[2021-08-25T13:48:32.259] [ERROR] - 81 nodesdk:DefaultHttpClient:2 some error found: {
   data: {
-    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:PUT|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn%3Afss%3Acn-north-4%3A0bcc05efb100f2a92f53c011f262dfa0%3Afunction%3Adefault%3Afunction_test_node%3Alatest/config/||content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-project-id:0bcc05efb100f2a92f53c011f262dfa0|x-sdk-date:20210824T040812Z||content-type;host;x-project-id;x-sdk-date|c71584989f040a33ce65a6a46aaa021762b18b78dcb4c036801bc8422af784e5',
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T054832Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
     error_code: 'APIGW.0301',
-    request_id: '76afdccb88d1a4e304427ae4e91b8132'
+    request_id: 'a1743ccf6e82e2151651b300d1e0c73a'
   },
   status: 401,
   headers: {
-    date: 'Tue, 24 Aug 2021 04:08:12 GMT',
+    date: 'Wed, 25 Aug 2021 05:48:32 GMT',
     'content-type': 'application/json',
     'transfer-encoding': 'chunked',
     connection: 'close',
     server: 'api-gateway',
-    'x-request-id': '76afdccb88d1a4e304427ae4e91b8132'
+    'x-request-id': 'a1743ccf6e82e2151651b300d1e0c73a'
   },
   message: 'Request failed with status code 401',
   config: {
-    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node:latest/config',
-    method: 'put',
-    data: '{"func_name":"function_test_node","handler":"index.handler","memory_size":128,"timeout":30,"runtime":"Node.js12.13"}',
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
     headers: {
       Accept: 'application/json',
-      'content-type': 'application/json',
       'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
       'Content-Type': 'application/json',
-      'X-Sdk-Date': '20210824T040812Z',
+      'X-Sdk-Date': '20210825T054832Z',
       host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-project-id;x-sdk-date, Signature=d3eb97bca8ac9e8370033ec676b29fda5cd463ef525ed04b61b27b7e28ae3c85',
-      'User-Agent': 'huaweicloud-usdk-nodejs/3.0',
-      'Content-Length': 116
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=b1cf013a29a392e10cba351f8f3d7bb8e36aad8be8a4c2d1382116a64f10d7a8',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
     },
     proxy: false,
-    params: {},
-    transformRequest: [ [Function: bound ] ],
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
     transformResponse: [ [Function: transformResponse] ],
     paramsSerializer: [Function: paramsSerializer],
     timeout: 0,
@@ -884,19 +287,19 @@
     validateStatus: [Function: validateStatus]
   },
   originalError: Error: Request failed with status code 401
-      at createError (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/createError.js:16:15)
-      at settle (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/settle.js:17:12)
-      at IncomingMessage.handleStreamEnd (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/adapters/http.js:260:11)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1327:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
     config: {
-      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node:latest/config',
-      method: 'put',
-      data: '{"func_name":"function_test_node","handler":"index.handler","memory_size":128,"timeout":30,"runtime":"Node.js12.13"}',
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
       headers: [Object],
       proxy: false,
-      params: {},
+      params: [Object],
       transformRequest: [Array],
       transformResponse: [Array],
       paramsSerializer: [Function: paramsSerializer],
@@ -920,7 +323,7 @@
       chunkedEncoding: false,
       shouldKeepAlive: false,
       _defaultKeepAlive: true,
-      useChunkedEncodingByDefault: true,
+      useChunkedEncodingByDefault: false,
       sendDate: false,
       _removedConnection: false,
       _removedContLen: false,
@@ -930,26 +333,27 @@
       _trailer: '',
       finished: true,
       _headerSent: true,
+      _closed: false,
       socket: [TLSSocket],
-      _header: 'PUT /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node:latest/config HTTP/1.1\r\n' +
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
         'Accept: application/json\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
         'Content-Type: application/json\r\n' +
-        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
-        'X-Sdk-Date: 20210824T040812Z\r\n' +
+        'X-Sdk-Date: 20210825T054832Z\r\n' +
         'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
-        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-project-id;x-sdk-date, Signature=d3eb97bca8ac9e8370033ec676b29fda5cd463ef525ed04b61b27b7e28ae3c85\r\n' +
-        'User-Agent: huaweicloud-usdk-nodejs/3.0\r\n' +
-        'Content-Length: 116\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=b1cf013a29a392e10cba351f8f3d7bb8e36aad8be8a4c2d1382116a64f10d7a8\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
         'Connection: close\r\n' +
         '\r\n',
       _keepAliveTimeout: 0,
-      _onPendingData: [Function: noopPendingOutput],
+      _onPendingData: [Function: nop],
       agent: [Agent],
       socketPath: undefined,
-      method: 'PUT',
+      method: 'GET',
       maxHeaderSize: undefined,
       insecureHTTPParser: undefined,
-      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node:latest/config',
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
       _ended: true,
       res: [IncomingMessage],
       aborted: false,
@@ -977,42 +381,42 @@
     isAxiosError: true,
     toJSON: [Function: toJSON]
   },
-  requestId: '76afdccb88d1a4e304427ae4e91b8132'
+  requestId: 'a1743ccf6e82e2151651b300d1e0c73a'
 }
 
-[2021-08-24T12:48:01.203] [ERROR] - 91 nodesdk:DefaultHttpClient:6 some error found: {
+[2021-08-25T13:52:46.779] [ERROR] - 81 nodesdk:DefaultHttpClient:4 some error found: {
   data: {
-    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:DELETE|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn%3Afss%3Acn-north-4%3A0bcc05efb100f2a92f53c011f262dfa0%3Afunction%3Adefault%3Afunction_test_node/||host:functiongraph.cn-north-4.myhuaweicloud.com|x-project-id:0bcc05efb100f2a92f53c011f262dfa0|x-sdk-date:20210824T044801Z||host;x-project-id;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T055048Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
     error_code: 'APIGW.0301',
-    request_id: 'e298499d31c341adbd36b6b935b43677'
+    request_id: 'd18cd0da2aa8eebed3e4480f7cf1baa3'
   },
   status: 401,
   headers: {
-    date: 'Tue, 24 Aug 2021 04:48:01 GMT',
+    date: 'Wed, 25 Aug 2021 05:52:46 GMT',
     'content-type': 'application/json',
     'transfer-encoding': 'chunked',
     connection: 'close',
     server: 'api-gateway',
-    'x-request-id': 'e298499d31c341adbd36b6b935b43677'
+    'x-request-id': 'd18cd0da2aa8eebed3e4480f7cf1baa3'
   },
   message: 'Request failed with status code 401',
   config: {
-    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-    method: 'delete',
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
     data: '{}',
     headers: {
       Accept: 'application/json',
-      'content-type': 'application/json',
       'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
-      'X-Sdk-Date': '20210824T044801Z',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T055048Z',
       host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=79267b12ed50494c6f029639636280669d715e87b68efc44d7e11f95140beff7',
-      'User-Agent': 'huaweicloud-usdk-nodejs/3.0',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=59e9b9610c626397eee0d0423da636c3f5ba4887ef55b77935c03dc0b479fb5f',
+      'User-Agent': 'axios/0.21.1',
       'Content-Length': 2
     },
     proxy: false,
-    params: {},
-    transformRequest: [ [Function: bound ] ],
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
     transformResponse: [ [Function: transformResponse] ],
     paramsSerializer: [Function: paramsSerializer],
     timeout: 0,
@@ -1024,19 +428,19 @@
     validateStatus: [Function: validateStatus]
   },
   originalError: Error: Request failed with status code 401
-      at createError (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/createError.js:16:15)
-      at settle (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/settle.js:17:12)
-      at IncomingMessage.handleStreamEnd (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/adapters/http.js:260:11)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1327:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
     config: {
-      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-      method: 'delete',
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
       data: '{}',
       headers: [Object],
       proxy: false,
-      params: {},
+      params: [Object],
       transformRequest: [Array],
       transformResponse: [Array],
       paramsSerializer: [Function: paramsSerializer],
@@ -1070,26 +474,27 @@
       _trailer: '',
       finished: true,
       _headerSent: true,
+      _closed: false,
       socket: [TLSSocket],
-      _header: 'DELETE /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node HTTP/1.1\r\n' +
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
         'Accept: application/json\r\n' +
-        'content-type: application/json\r\n' +
         'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
-        'X-Sdk-Date: 20210824T044801Z\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T055048Z\r\n' +
         'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
-        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=79267b12ed50494c6f029639636280669d715e87b68efc44d7e11f95140beff7\r\n' +
-        'User-Agent: huaweicloud-usdk-nodejs/3.0\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=59e9b9610c626397eee0d0423da636c3f5ba4887ef55b77935c03dc0b479fb5f\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
         'Content-Length: 2\r\n' +
         'Connection: close\r\n' +
         '\r\n',
       _keepAliveTimeout: 0,
-      _onPendingData: [Function: noopPendingOutput],
+      _onPendingData: [Function: nop],
       agent: [Agent],
       socketPath: undefined,
-      method: 'DELETE',
+      method: 'GET',
       maxHeaderSize: undefined,
       insecureHTTPParser: undefined,
-      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
       _ended: true,
       res: [IncomingMessage],
       aborted: false,
@@ -1117,42 +522,42 @@
     isAxiosError: true,
     toJSON: [Function: toJSON]
   },
-  requestId: 'e298499d31c341adbd36b6b935b43677'
+  requestId: 'd18cd0da2aa8eebed3e4480f7cf1baa3'
 }
 
-[2021-08-24T12:54:50.100] [ERROR] - 91 nodesdk:DefaultHttpClient:10 some error found: {
+[2021-08-25T13:53:02.700] [ERROR] - 81 nodesdk:DefaultHttpClient:6 some error found: {
   data: {
-    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:DELETE|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn%3Afss%3Acn-north-4%3A0bcc05efb100f2a92f53c011f262dfa0%3Afunction%3Adefault%3Afunction_test_node/||host:functiongraph.cn-north-4.myhuaweicloud.com|x-project-id:0bcc05efb100f2a92f53c011f262dfa0|x-sdk-date:20210824T045448Z||host;x-project-id;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T055256Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
     error_code: 'APIGW.0301',
-    request_id: '71b29566e8627ef5b668376c6348a99c'
+    request_id: '96a4ab812db9af5b587721bc24f87b4a'
   },
   status: 401,
   headers: {
-    date: 'Tue, 24 Aug 2021 04:54:50 GMT',
+    date: 'Wed, 25 Aug 2021 05:53:02 GMT',
     'content-type': 'application/json',
     'transfer-encoding': 'chunked',
     connection: 'close',
     server: 'api-gateway',
-    'x-request-id': '71b29566e8627ef5b668376c6348a99c'
+    'x-request-id': '96a4ab812db9af5b587721bc24f87b4a'
   },
   message: 'Request failed with status code 401',
   config: {
-    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-    method: 'delete',
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
     data: '{}',
     headers: {
       Accept: 'application/json',
-      'content-type': 'application/json',
       'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
-      'X-Sdk-Date': '20210824T045448Z',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T055256Z',
       host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=6fd6ff774debdbf43aa5ddde0c1585e93c9c304de8c32cb138cdf1de856bc195',
-      'User-Agent': 'huaweicloud-usdk-nodejs/3.0',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=3892978a2fab61e4ed2e6fc4a6cf3de740bdad36638a8cda41e250b98ac0e2e3',
+      'User-Agent': 'axios/0.21.1',
       'Content-Length': 2
     },
     proxy: false,
-    params: {},
-    transformRequest: [ [Function: bound ] ],
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
     transformResponse: [ [Function: transformResponse] ],
     paramsSerializer: [Function: paramsSerializer],
     timeout: 0,
@@ -1164,19 +569,19 @@
     validateStatus: [Function: validateStatus]
   },
   originalError: Error: Request failed with status code 401
-      at createError (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/createError.js:16:15)
-      at settle (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/settle.js:17:12)
-      at IncomingMessage.handleStreamEnd (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/adapters/http.js:260:11)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1327:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
     config: {
-      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-      method: 'delete',
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
       data: '{}',
       headers: [Object],
       proxy: false,
-      params: {},
+      params: [Object],
       transformRequest: [Array],
       transformResponse: [Array],
       paramsSerializer: [Function: paramsSerializer],
@@ -1210,26 +615,27 @@
       _trailer: '',
       finished: true,
       _headerSent: true,
+      _closed: false,
       socket: [TLSSocket],
-      _header: 'DELETE /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node HTTP/1.1\r\n' +
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
         'Accept: application/json\r\n' +
-        'content-type: application/json\r\n' +
         'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
-        'X-Sdk-Date: 20210824T045448Z\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T055256Z\r\n' +
         'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
-        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=6fd6ff774debdbf43aa5ddde0c1585e93c9c304de8c32cb138cdf1de856bc195\r\n' +
-        'User-Agent: huaweicloud-usdk-nodejs/3.0\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=3892978a2fab61e4ed2e6fc4a6cf3de740bdad36638a8cda41e250b98ac0e2e3\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
         'Content-Length: 2\r\n' +
         'Connection: close\r\n' +
         '\r\n',
       _keepAliveTimeout: 0,
-      _onPendingData: [Function: noopPendingOutput],
+      _onPendingData: [Function: nop],
       agent: [Agent],
       socketPath: undefined,
-      method: 'DELETE',
+      method: 'GET',
       maxHeaderSize: undefined,
       insecureHTTPParser: undefined,
-      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
       _ended: true,
       res: [IncomingMessage],
       aborted: false,
@@ -1257,42 +663,42 @@
     isAxiosError: true,
     toJSON: [Function: toJSON]
   },
-  requestId: '71b29566e8627ef5b668376c6348a99c'
+  requestId: '96a4ab812db9af5b587721bc24f87b4a'
 }
 
-[2021-08-24T12:54:51.617] [ERROR] - 91 nodesdk:DefaultHttpClient:12 some error found: {
+[2021-08-25T13:56:06.852] [ERROR] - 81 nodesdk:DefaultHttpClient:8 some error found: {
   data: {
-    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:DELETE|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn%3Afss%3Acn-north-4%3A0bcc05efb100f2a92f53c011f262dfa0%3Afunction%3Adefault%3Afunction_test_node/||host:functiongraph.cn-north-4.myhuaweicloud.com|x-project-id:0bcc05efb100f2a92f53c011f262dfa0|x-sdk-date:20210824T045451Z||host;x-project-id;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T055438Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
     error_code: 'APIGW.0301',
-    request_id: 'ffecc6d380efd29cdeacdb38c91bd2b8'
+    request_id: 'c4312f0a6888651cbdb77ff53822ff6c'
   },
   status: 401,
   headers: {
-    date: 'Tue, 24 Aug 2021 04:54:51 GMT',
+    date: 'Wed, 25 Aug 2021 05:54:56 GMT',
     'content-type': 'application/json',
     'transfer-encoding': 'chunked',
     connection: 'close',
     server: 'api-gateway',
-    'x-request-id': 'ffecc6d380efd29cdeacdb38c91bd2b8'
+    'x-request-id': 'c4312f0a6888651cbdb77ff53822ff6c'
   },
   message: 'Request failed with status code 401',
   config: {
-    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-    method: 'delete',
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
     data: '{}',
     headers: {
       Accept: 'application/json',
-      'content-type': 'application/json',
       'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
-      'X-Sdk-Date': '20210824T045451Z',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T055438Z',
       host: 'functiongraph.cn-north-4.myhuaweicloud.com',
-      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=168a53f4496c111e8d958ba19808be266dc8ebc13e69f4dae962f601651fd4a6',
-      'User-Agent': 'huaweicloud-usdk-nodejs/3.0',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=c5296ff50fb744310920ead74f47199ea4807f644501a5922ef632167e549c13',
+      'User-Agent': 'axios/0.21.1',
       'Content-Length': 2
     },
     proxy: false,
-    params: {},
-    transformRequest: [ [Function: bound ] ],
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
     transformResponse: [ [Function: transformResponse] ],
     paramsSerializer: [Function: paramsSerializer],
     timeout: 0,
@@ -1304,19 +710,19 @@
     validateStatus: [Function: validateStatus]
   },
   originalError: Error: Request failed with status code 401
-      at createError (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/createError.js:16:15)
-      at settle (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/core/settle.js:17:12)
-      at IncomingMessage.handleStreamEnd (/Users/zrwang/Documents/serverless dev/huaweicloud-sdk-nodejs-v3/node_modules/axios/lib/adapters/http.js:260:11)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1327:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
     config: {
-      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
-      method: 'delete',
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
       data: '{}',
       headers: [Object],
       proxy: false,
-      params: {},
+      params: [Object],
       transformRequest: [Array],
       transformResponse: [Array],
       paramsSerializer: [Function: paramsSerializer],
@@ -1350,26 +756,27 @@
       _trailer: '',
       finished: true,
       _headerSent: true,
+      _closed: false,
       socket: [TLSSocket],
-      _header: 'DELETE /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node HTTP/1.1\r\n' +
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
         'Accept: application/json\r\n' +
-        'content-type: application/json\r\n' +
         'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
-        'X-Sdk-Date: 20210824T045451Z\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T055438Z\r\n' +
         'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
-        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=host;x-project-id;x-sdk-date, Signature=168a53f4496c111e8d958ba19808be266dc8ebc13e69f4dae962f601651fd4a6\r\n' +
-        'User-Agent: huaweicloud-usdk-nodejs/3.0\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=c5296ff50fb744310920ead74f47199ea4807f644501a5922ef632167e549c13\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
         'Content-Length: 2\r\n' +
         'Connection: close\r\n' +
         '\r\n',
       _keepAliveTimeout: 0,
-      _onPendingData: [Function: noopPendingOutput],
+      _onPendingData: [Function: nop],
       agent: [Agent],
       socketPath: undefined,
-      method: 'DELETE',
+      method: 'GET',
       maxHeaderSize: undefined,
       insecureHTTPParser: undefined,
-      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/urn:fss:cn-north-4:0bcc05efb100f2a92f53c011f262dfa0:function:default:function_test_node',
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
       _ended: true,
       res: [IncomingMessage],
       aborted: false,
@@ -1397,6 +804,2860 @@
     isAxiosError: true,
     toJSON: [Function: toJSON]
   },
-  requestId: 'ffecc6d380efd29cdeacdb38c91bd2b8'
+  requestId: 'c4312f0a6888651cbdb77ff53822ff6c'
+}
+
+[2021-08-25T13:58:04.105] [ERROR] - 81 nodesdk:DefaultHttpClient:10 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T055708Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: 'd20535410f119c3cd2735a17e740ef4f'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 05:58:04 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': 'd20535410f119c3cd2735a17e740ef4f'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T055708Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=fd2075724feca56b01707f33683f77bac2ffee190fde1873f420ea0e3b613f62',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    proxy: false,
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    paramsSerializer: [Function: paramsSerializer],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: Infinity,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      proxy: false,
+      params: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      paramsSerializer: [Function: paramsSerializer],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: Infinity,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
+        'Accept: application/json\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T055708Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=fd2075724feca56b01707f33683f77bac2ffee190fde1873f420ea0e3b613f62\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: 'd20535410f119c3cd2735a17e740ef4f'
+}
+
+[2021-08-25T14:08:48.644] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T060841Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: 'b75149de099302a1d4aae132d6fbc674'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 06:08:48 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': 'b75149de099302a1d4aae132d6fbc674'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T060841Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=ec164b480877e531f5d3d27b273fb60cb9ca5284f7a26235f7098bad221b24d1',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    paramsSerializer: [Function: paramsSerializer],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      params: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      paramsSerializer: [Function: paramsSerializer],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T060841Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=ec164b480877e531f5d3d27b273fb60cb9ca5284f7a26235f7098bad221b24d1\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: 'b75149de099302a1d4aae132d6fbc674'
+}
+
+[2021-08-25T15:49:52.522] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T074309Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: 'ba5e23c768b5358e2c9b1a0a5193d7e2'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 07:49:31 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': 'ba5e23c768b5358e2c9b1a0a5193d7e2'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T074309Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=1373c2f7523393659033d60e00fb19d6410606147bd10cf3e126cc2feb101cfa',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    paramsSerializer: [Function: paramsSerializer],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      params: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      paramsSerializer: [Function: paramsSerializer],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T074309Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=1373c2f7523393659033d60e00fb19d6410606147bd10cf3e126cc2feb101cfa\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: 'ba5e23c768b5358e2c9b1a0a5193d7e2'
+}
+
+[2021-08-25T15:56:43.823] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T075118Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: '23f84e5f8c8f1d22f8d6893163ac3d2b'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 07:56:42 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': '23f84e5f8c8f1d22f8d6893163ac3d2b'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T075118Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=e49035a165b95ad16df24d123d4ce9854f4e5cf693ef4a2ae97de11eac1a1cf4',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    paramsSerializer: [Function: paramsSerializer],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      params: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      paramsSerializer: [Function: paramsSerializer],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T075118Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=e49035a165b95ad16df24d123d4ce9854f4e5cf693ef4a2ae97de11eac1a1cf4\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: '23f84e5f8c8f1d22f8d6893163ac3d2b'
+}
+
+[2021-08-25T15:56:52.676] [ERROR] - 81 nodesdk:DefaultHttpClient:2 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T075307Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: '206a938cbc179c129d4b53d7618a664a'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 07:56:42 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': '206a938cbc179c129d4b53d7618a664a'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T075307Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=88ff7d92df2e296792a4a4805ffd69617e7778f29482617d493437fa0d5b00fd',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    paramsSerializer: [Function: paramsSerializer],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      params: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      paramsSerializer: [Function: paramsSerializer],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T075307Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=88ff7d92df2e296792a4a4805ffd69617e7778f29482617d493437fa0d5b00fd\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: '206a938cbc179c129d4b53d7618a664a'
+}
+
+[2021-08-25T15:57:33.866] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T075723Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: '54240c8be6cc7fd8be07c6c6cfad6968'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 07:57:32 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': '54240c8be6cc7fd8be07c6c6cfad6968'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T075723Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=ab6b94895fcaf93f67faf28d66dfd786cd5a7b5ff351725bd46fd197b297f01f',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    paramsSerializer: [Function: paramsSerializer],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      params: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      paramsSerializer: [Function: paramsSerializer],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T075723Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=ab6b94895fcaf93f67faf28d66dfd786cd5a7b5ff351725bd46fd197b297f01f\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: '54240c8be6cc7fd8be07c6c6cfad6968'
+}
+
+[2021-08-25T16:01:30.029] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T080113Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: '711e2a519d6461d2cb89b9fc03642b65'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 08:01:27 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': '711e2a519d6461d2cb89b9fc03642b65'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T080113Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=fcc796799c92efbef8e621ff58de771703c150c58bbd12dfcb7518d1eb3e5bd6',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    paramsSerializer: [Function: paramsSerializer],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      params: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      paramsSerializer: [Function: paramsSerializer],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T080113Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=fcc796799c92efbef8e621ff58de771703c150c58bbd12dfcb7518d1eb3e5bd6\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: '711e2a519d6461d2cb89b9fc03642b65'
+}
+
+[2021-08-25T16:06:27.516] [ERROR] - 81 nodesdk:DefaultHttpClient:2 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T080226Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: '3455208eb42029ca83d3cf09807dc9fe'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 08:06:25 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': '3455208eb42029ca83d3cf09807dc9fe'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T080226Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=30a25fc96ee5f31620438283cd976ecd3cb2bfb63942a9aa981c68925de967ae',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    paramsSerializer: [Function: paramsSerializer],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      params: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      paramsSerializer: [Function: paramsSerializer],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T080226Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=30a25fc96ee5f31620438283cd976ecd3cb2bfb63942a9aa981c68925de967ae\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: '3455208eb42029ca83d3cf09807dc9fe'
+}
+
+[2021-08-25T16:08:40.635] [ERROR] - 81 nodesdk:DefaultHttpClient:4 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T080644Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: '63a3aed8de0e0e8ea1db7fcf39fb3c94'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 08:08:36 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': '63a3aed8de0e0e8ea1db7fcf39fb3c94'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T080644Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=28549a7bb441172f875bc492b16d992a976459c29c2503dc5c55b63ef13e1a3d',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    paramsSerializer: [Function: paramsSerializer],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      params: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      paramsSerializer: [Function: paramsSerializer],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T080644Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=28549a7bb441172f875bc492b16d992a976459c29c2503dc5c55b63ef13e1a3d\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: '63a3aed8de0e0e8ea1db7fcf39fb3c94'
+}
+
+[2021-08-25T16:15:58.768] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/||content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T081435Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: 'da0b82e97865256e20788c4ec47c4f78'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 08:15:56 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': 'da0b82e97865256e20788c4ec47c4f78'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T081435Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=a0b7b6139c2e57a59e252d147c1aa59241e70acf174973706a75fc0f5e1be0db',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T081435Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=a0b7b6139c2e57a59e252d147c1aa59241e70acf174973706a75fc0f5e1be0db\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: 'da0b82e97865256e20788c4ec47c4f78'
+}
+
+[2021-08-25T16:16:23.430] [ERROR] - 81 nodesdk:DefaultHttpClient:2 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/||content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T081435Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: '869d5be2ef2afaf4a2897d97f617a445'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 08:16:18 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': '869d5be2ef2afaf4a2897d97f617a445'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T081435Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=a0b7b6139c2e57a59e252d147c1aa59241e70acf174973706a75fc0f5e1be0db',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T081435Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=a0b7b6139c2e57a59e252d147c1aa59241e70acf174973706a75fc0f5e1be0db\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: '869d5be2ef2afaf4a2897d97f617a445'
+}
+
+[2021-08-25T16:24:55.591] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/||content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T081435Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: 'c959f392f4c2c1d3a31f29e532e503c9'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 08:24:54 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': 'c959f392f4c2c1d3a31f29e532e503c9'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T081435Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=a0b7b6139c2e57a59e252d147c1aa59241e70acf174973706a75fc0f5e1be0db',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T081435Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=a0b7b6139c2e57a59e252d147c1aa59241e70acf174973706a75fc0f5e1be0db\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: 'c959f392f4c2c1d3a31f29e532e503c9'
+}
+
+[2021-08-25T16:24:56.815] [ERROR] - 81 nodesdk:DefaultHttpClient:2 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/||content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T081435Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: 'baae2cb28aec7d8cfa7081e1d8a3b7e8'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 08:24:54 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': 'baae2cb28aec7d8cfa7081e1d8a3b7e8'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T081435Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=a0b7b6139c2e57a59e252d147c1aa59241e70acf174973706a75fc0f5e1be0db',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T081435Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=a0b7b6139c2e57a59e252d147c1aa59241e70acf174973706a75fc0f5e1be0db\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: 'baae2cb28aec7d8cfa7081e1d8a3b7e8'
+}
+
+[2021-08-25T16:26:22.684] [ERROR] - 81 nodesdk:DefaultHttpClient:4 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/||content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T081435Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: 'ef04e99e91ffd33361a1a5985ea1545d'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 08:26:13 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': 'ef04e99e91ffd33361a1a5985ea1545d'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T081435Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=a0b7b6139c2e57a59e252d147c1aa59241e70acf174973706a75fc0f5e1be0db',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T081435Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=a0b7b6139c2e57a59e252d147c1aa59241e70acf174973706a75fc0f5e1be0db\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: 'ef04e99e91ffd33361a1a5985ea1545d'
+}
+
+[2021-08-25T16:32:36.774] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/|package=default|content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-project-id:0bcc05efb100f2a92f53c011f262dfa0|x-sdk-date:20210825T083227Z||content-type;host;x-project-id;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: 'eefa6412732b8574377f5bf06a6340e1'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 08:32:33 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': 'eefa6412732b8574377f5bf06a6340e1'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T083227Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-project-id;x-sdk-date, Signature=c851efe5742091818eaf2cf0b9814a11937c3e9fbc57682fb29401b166edc2fb',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    params: { package: 'default' },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    paramsSerializer: [Function: paramsSerializer],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      params: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      paramsSerializer: [Function: paramsSerializer],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T083227Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-project-id;x-sdk-date, Signature=c851efe5742091818eaf2cf0b9814a11937c3e9fbc57682fb29401b166edc2fb\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions?package=default',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: 'eefa6412732b8574377f5bf06a6340e1'
+}
+
+[2021-08-25T16:35:16.970] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/||content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-project-id:0bcc05efb100f2a92f53c011f262dfa0|x-sdk-date:20210825T083511Z||content-type;host;x-project-id;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: '1411bc8cd318d04c6cdb06bacbd3831e'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 08:35:14 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': '1411bc8cd318d04c6cdb06bacbd3831e'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T083511Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-project-id;x-sdk-date, Signature=095e205632e341d2482956a9e405fb1b9a70044408657eaad7f95aca3b4a9128',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T083511Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-project-id;x-sdk-date, Signature=095e205632e341d2482956a9e405fb1b9a70044408657eaad7f95aca3b4a9128\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: '1411bc8cd318d04c6cdb06bacbd3831e'
+}
+
+[2021-08-25T16:38:18.978] [ERROR] - 81 nodesdk:DefaultHttpClient:2 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/||content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-project-id:0bcc05efb100f2a92f53c011f262dfa0|x-sdk-date:20210825T083535Z||content-type;host;x-project-id;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: '9a7752c8395229a45a52cb99d7602a62'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 08:38:18 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': '9a7752c8395229a45a52cb99d7602a62'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T083535Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-project-id;x-sdk-date, Signature=45ae1ae145ced24936485a2b18da6325a266a5357bce8cc5447de7f23a9a368f',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T083535Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-project-id;x-sdk-date, Signature=45ae1ae145ced24936485a2b18da6325a266a5357bce8cc5447de7f23a9a368f\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: '9a7752c8395229a45a52cb99d7602a62'
+}
+
+[2021-08-25T18:27:33.757] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: x-auth-token not found',
+    error_code: 'APIGW.0301',
+    request_id: 'e2c3ca15bc3ef794df35b82715d63a1f'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 10:27:32 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': 'e2c3ca15bc3ef794df35b82715d63a1f'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json;charset=utf-8',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json;charset=utf-8\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: 'e2c3ca15bc3ef794df35b82715d63a1f'
+}
+
+[2021-08-25T18:33:44.494] [ERROR] - 81 nodesdk:DefaultHttpClient:2 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: x-auth-token not found',
+    error_code: 'APIGW.0301',
+    request_id: 'dcb53c1255cc28a76143f86b3bd8960a'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 10:32:50 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': 'dcb53c1255cc28a76143f86b3bd8960a'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json;charset=utf-8',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json;charset=utf-8\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: 'dcb53c1255cc28a76143f86b3bd8960a'
+}
+
+[2021-08-25T18:38:12.795] [ERROR] - 81 nodesdk:DefaultHttpClient:4 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: x-auth-token not found',
+    error_code: 'APIGW.0301',
+    request_id: '84efc6bb031b62595dd4560f4a5e1bc6'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 10:34:03 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': '84efc6bb031b62595dd4560f4a5e1bc6'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'X-Project-Id': '0bcc05efb100f2a92f53c011f262dfa0',
+      'Content-Type': 'application/json;charset=utf-8',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'X-Project-Id: 0bcc05efb100f2a92f53c011f262dfa0\r\n' +
+        'Content-Type: application/json;charset=utf-8\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: '84efc6bb031b62595dd4560f4a5e1bc6'
+}
+
+[2021-08-25T18:38:43.007] [ERROR] - 81 nodesdk:DefaultHttpClient:0 some error found: {
+  data: {
+    error_msg: 'Incorrect IAM authentication information: verify aksk signature fail, canonicalRequest:GET|/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions/||content-type:application/json|host:functiongraph.cn-north-4.myhuaweicloud.com|x-sdk-date:20210825T103726Z||content-type;host;x-sdk-date|44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a',
+    error_code: 'APIGW.0301',
+    request_id: 'd00b9fe5a0449cc8bef4fda081c3518b'
+  },
+  status: 401,
+  headers: {
+    date: 'Wed, 25 Aug 2021 10:38:42 GMT',
+    'content-type': 'application/json',
+    'transfer-encoding': 'chunked',
+    connection: 'close',
+    server: 'api-gateway',
+    'x-request-id': 'd00b9fe5a0449cc8bef4fda081c3518b'
+  },
+  message: 'Request failed with status code 401',
+  config: {
+    url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+    method: 'get',
+    data: '{}',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'X-Sdk-Date': '20210825T103726Z',
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      Authorization: 'SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=6c6974e410c005501593a31b6a22903adcc0625f846a93968af1621debda740b',
+      'User-Agent': 'axios/0.21.1',
+      'Content-Length': 2
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus]
+  },
+  originalError: Error: Request failed with status code 401
+      at createError (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/createError.js:16:15)
+      at settle (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/core/settle.js:17:12)
+      at IncomingMessage.handleStreamEnd (/run/media/wzr/00096FB8000E4FAF/huaweicloud-sdk-nodejs-v3/node_modules/_axios@0.21.1@axios/lib/adapters/http.js:260:11)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    config: {
+      url: 'https://functiongraph.cn-north-4.myhuaweicloud.com/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      method: 'get',
+      data: '{}',
+      headers: [Object],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      adapter: [Function: httpAdapter],
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'X-Sdk-Date: 20210825T103726Z\r\n' +
+        'host: functiongraph.cn-north-4.myhuaweicloud.com\r\n' +
+        'Authorization: SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=6c6974e410c005501593a31b6a22903adcc0625f846a93968af1621debda740b\r\n' +
+        'User-Agent: axios/0.21.1\r\n' +
+        'Content-Length: 2\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v2/0bcc05efb100f2a92f53c011f262dfa0/fgs/functions',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'functiongraph.cn-north-4.myhuaweicloud.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    response: {
+      status: 401,
+      statusText: 'Unauthorized',
+      headers: [Object],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    isAxiosError: true,
+    toJSON: [Function: toJSON]
+  },
+  requestId: 'd00b9fe5a0449cc8bef4fda081c3518b'
 }
 

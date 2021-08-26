@@ -139,7 +139,7 @@ export class DefaultHttpClient implements HttpClient {
 
         let url = endpoint;
         url = stripTrailingSlash(url);
-        headers['User-Agent'] = "huaweicloud-usdk-nodejs/3.0";
+        // headers['User-Agent'] = "huaweicloud-usdk-nodejs/3.0";
         let requestParams = {
             url,
             method,
@@ -157,9 +157,20 @@ export class DefaultHttpClient implements HttpClient {
             })
         }
         // TODO
-        DefaultHttpClient.httpReqParam = requestParams;
-
-        const res: AxiosResponse = await this.axiosInstance(requestParams);
+        // DefaultHttpClient.httpReqParam = requestParams;
+        var axios = require('axios');
+        const config = {
+            method: requestParams.method,
+            url: requestParams.url,
+            headers: {
+                "Content-Type": "application/json",
+                "X-Sdk-Date": "20210825T103726Z",
+                host: "functiongraph.cn-north-4.myhuaweicloud.com",
+                Authorization: "SDK-HMAC-SHA256 Access=6T9ZUN0WWK4SDIAWJVOJ, SignedHeaders=content-type;host;x-sdk-date, Signature=6c6974e410c005501593a31b6a22903adcc0625f846a93968af1621debda740b",
+              },
+            data: requestParams.data
+        }
+        const res: AxiosResponse = await axios(config);
 
         return res;
     }

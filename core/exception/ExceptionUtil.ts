@@ -29,9 +29,9 @@ export class ExceptionUtil {
         const data = exception.data || {};
         let errorCode = data.error ? data.error.code : exception.status;
         let errorMsg = data.error ? data.error.message : exception.message;
-        let requestId = exception.requestId;
+        let requestId = exception.requestId || "";
 
-        const httpStatusCode = exception.status;
+        const httpStatusCode = exception.status || "";
         if (httpStatusCode) {
             if (httpStatusCode >= 400 && httpStatusCode < 500) {
                 return new ClientRequestException(httpStatusCode, errorMsg, errorCode, requestId);

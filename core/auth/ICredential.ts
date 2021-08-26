@@ -24,5 +24,6 @@ import { IHttpRequest } from "../http/IHttpRequest";
 export interface ICredential {
     getAk: () => string | undefined;
     getSk: () => string | undefined;
-    processAuthRequest: (httpRequest: IHttpRequest) => IHttpRequest;
+    // processAuthRequest: (httpRequest: IHttpRequest) =>  {request: IHttpRequest, opt:any};
+    processAuthRequest: (httpRequest: IHttpRequest) =>  any;
 }

@@ -25,6 +25,7 @@ import { AKSKSigner } from "./AKSKSigner";
 import { HttpRequestBuilder } from "../http/IHttpRequestBuilder";
 import extend from "extend";
 import { RequiredError } from "./AKSKSigner";
+import { getHeader } from "../utils/getHeader"
 
 export class BasicCredentials implements ICredential {
     private ak: string | undefined;
@@ -55,7 +56,7 @@ export class BasicCredentials implements ICredential {
     public getAk(): string | undefined {
         return this.ak;
     }
-    public getSk(): string | undefined {
+    public getSk(): string | undefined { 
         return this.sk;
     }
 
@@ -95,9 +96,10 @@ export class BasicCredentials implements ICredential {
         // builder.addHeaders("Content-Type", "application/json");
         builder.addAllHeaders(httpRequest.headers);
         extend(httpRequest, builder.build());
-        const headers = AKSKSigner.sign(httpRequest, this);
-
-        builder.addAllHeaders(headers);
+        // const headers = AKSKSigner.sign(httpRequest, this);
+        // const opt = getHeader(httpRequest, this);
+        // const headers = opt.headers;
+        // builder.addAllHeaders(headers);
 
         return extend(httpRequest, builder.build());
     }

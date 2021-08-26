@@ -27,6 +27,7 @@ export class HttpRequestBuilder {
 
   constructor(httpRequest?: HttpRequestImpl) {
     this.httpRequest = httpRequest || new HttpRequestImpl();
+    
   }
 
   public build(): IHttpRequest {

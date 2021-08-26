@@ -1,6 +1,7 @@
-import { HcClient } from "@huaweicloud/huaweicloud-sdk-core/HcClient";
-import { ClientBuilder } from "@huaweicloud/huaweicloud-sdk-core/ClientBuilder";
-import { SdkResponse } from "@huaweicloud/huaweicloud-sdk-core/SdkResponse";
+import { HcClient } from "../../core/HcClient";
+import { ClientBuilder } from "../../core/ClientBuilder";
+import { SdkResponse } from "../../core/SdkResponse";
+import { ClientRequest } from "http"
 
 import { CreateFunctionRequest } from "./model/CreateFunctionRequest";
 import { CreateFunctionResponse } from "./model/CreateFunctionResponse";
@@ -12,15 +13,40 @@ import { DeleteFunctionRequest } from "./model/DeleteFunctionRequest";
 import { UpdateFunctionConfigRequestBody } from "./model/UpdateFunctionConfigRequestBody";
 import { UpdateFunctionConfigRequest } from "./model/UpdateFunctionConfigRequest";
 import { UpdateFunctionConfigResponse } from "./model/UpdateFunctionConfigResponse";
+var axios = require('axios');
 
 export class FunctionGraphClient {
-    public static newBuilder(): ClientBuilder<FunctionGraphClient> {
-        return new ClientBuilder<FunctionGraphClient>(newClient);
+    public ak?: string;
+    public sk?: string;
+    public project_id?: string;
+    public endpoint?: string;
+    public constructor(ak?:string, sk?: string, project_id?: string, endpoint?: string) {
+        this['ak'] = ak;
+        this['sk'] = sk;
+        this['project_id'] = project_id;
+        this['endpoint'] = endpoint;
     }
-    private hcClient: HcClient;
-    public constructor(client: HcClient) {
-        this.hcClient = client;
+     
+    public withAk(ak: string): FunctionGraphClient {
+        this['ak'] = ak;
+        return this;
     }
+
+    public withSk(sk: string): FunctionGraphClient {
+        this['sk'] = sk;
+        return this;
+    }
+
+    public withProjectId(project_id: string): FunctionGraphClient {
+        this['project_id'] = project_id;
+        return this;
+    }
+
+    public withEndpoint(endpoint: string): FunctionGraphClient {
+        this['endpoint'] = endpoint;
+        return this;
+    }
+
     public getPath() {
         return __dirname;
     }
@@ -31,37 +57,47 @@ export class FunctionGraphClient {
      * @param {CreateFunctionRequestBody}  
      * @throws {RequiredError}
      */
-    public createFunction(createFunctionRequest: CreateFunctionRequest): Promise<CreateFunctionResponse> {
-        const options = ParamCreater().createFunction(createFunctionRequest);
-        options['responseHeader'] = [''];
-        return this.hcClient.sendRequest(options);
+    public async createFunction(createFunctionRequest: CreateFunctionRequest): Promise<any> {
+        const options = ParamCreater().createFunction(createFunctionRequest, this);
+        return axios(options)
+            .then((res:any)=>{
+                return res;
+            })
+            .catch((err:any) => {
+                return err;
+            })
     }
     /**
      * 更新函数代码
      * @param updateFuncionRequest 
      * @returns 
      */
-    public updateFunction(updateFuncionRequest: UpdateFunctionRequest): Promise<UpdateFunctionResponse>{
-        const options = ParamCreater().updateFunction(updateFuncionRequest);
-        options['responseHeader'] = ['']
-        return this.hcClient.sendRequest(options);
-    }
+    // public updateFunction(updateFuncionRequest: UpdateFunctionRequest): Promise<UpdateFunctionResponse>{
+    //     const options = ParamCreater().updateFunction(updateFuncionRequest);
+    //     options['responseHeader'] = ['']
+    //     return this.hcClient.sendRequest(options);
+    // }
 
 
-    public updateFunctionConfig(updateFunctionConfigRequest: UpdateFunctionConfigRequest): Promise<UpdateFunctionConfigResponse>{
-        const options = ParamCreater().updateFunctionConfig(updateFunctionConfigRequest);    
-        options['responseHeader'] = ['']
-        return this.hcClient.sendRequest(options);
-    }
+    // public updateFunctionConfig(updateFunctionConfigRequest: UpdateFunctionConfigRequest): Promise<UpdateFunctionConfigResponse>{
+    //     const options = ParamCreater().updateFunctionConfig(updateFunctionConfigRequest);    
+    //     options['responseHeader'] = ['']
+    //     return this.hcClient.sendRequest(options);
+    // }
 
     /**
      * 删除函数
      * @param deleteFunctionRequest 
      */
     public deleteFunction(deleteFunctionRequest: DeleteFunctionRequest): Promise<any>{
-        const options = ParamCreater().deleteFunction(deleteFunctionRequest);
-        options['responseHeader'] = [''];
-        return this.hcClient.sendRequest(options);
+        const options = ParamCreater().deleteFunction(deleteFunctionRequest, this);
+        return axios(options)
+            .then((res:any)=>{
+                return res;
+            })
+            .catch((err:any) => {
+                return err;
+            })
     }
     /**
      * 获取函数列表
@@ -69,30 +105,28 @@ export class FunctionGraphClient {
      * @param {GetFunctionListRequest} 
      * @param {RequiredError}
      */
-    public getFunctionList(getFunctionListRequest: GetFunctionListRequest): Promise<GetFunctionListResponse> {
-        const options = ParamCreater().getFunctionList(getFunctionListRequest);
-        options['responseHeader'] = [''];
-        return this.hcClient.sendRequest(options);
-    }
+    // public getFunctionList(getFunctionListRequest: GetFunctionListRequest): Promise<GetFunctionListResponse> {
+    //     const options = ParamCreater().getFunctionList(getFunctionListRequest);
+    //     options['responseHeader'] = [''];
+    //     return this.hcClient.sendRequest(options);
+    // }
 }
 
 export const ParamCreater = function () {
+
     return {
         /**
          * 此接口用于创建函数
          */
-        createFunction(createFunctionRequest?: CreateFunctionRequest) {
-            const options = {
+        createFunction(createFunctionRequest: CreateFunctionRequest, client: FunctionGraphClient) {
+            let options = {
                 method: "POST",
-                url: "/v2/{project_id}/fgs/functions",
-                contentType: "application/json;charset=UTF-8",
-                queryParams: {},
-                pathParams: {},
+                url: `${client.endpoint}/v2/${client.project_id}/fgs/functions`,
                 headers: {},
-                data: {}
+                data: ""
             }
             const localVarHeaderParameter = {} as any;
-            var body: any;
+            let body: any;
 
             if (createFunctionRequest !== null && createFunctionRequest !== undefined) {
                 if (createFunctionRequest instanceof CreateFunctionRequest) {
@@ -105,10 +139,20 @@ export const ParamCreater = function () {
             if(body === null || body === undefined) {
                 throw new RequiredError('body', 'Required parameter body')
             }
-            localVarHeaderParameter['Content-Type'] = 'application/json;charset=UTF-8';
-
-            options.data = body !== undefined ? body : {};
-            options.headers = localVarHeaderParameter;
+            body = Object.assign({}, body)
+            localVarHeaderParameter['Content-Type'] = 'application/json;';
+            let signer = require('./signer');
+            let https = require('https');
+            let sig = new signer.Signer();
+            sig.Key = client.ak;
+            sig.Secret = client.sk;
+            let r = new signer.HttpRequest(options.method, options.url);
+            r.headers =  {"Content-Type": "application/json"};
+            r.body = JSON.stringify(body);
+            let opt = sig.Sign(r);
+            
+            options.data = r.body;
+            options.headers = opt.headers;
             return options;
         },
 
@@ -223,10 +267,10 @@ export const ParamCreater = function () {
          * @param deleteFunctionRequest 
          * @returns 
          */
-        deleteFunction(deleteFunctionRequest: DeleteFunctionRequest) {
-            const options = {
+        deleteFunction(deleteFunctionRequest: DeleteFunctionRequest, client:FunctionGraphClient) {
+            let options = {
                 method: "DELETE",
-                url: "/v2/{project_id}/fgs/functions/{function_urn}",
+                url: `${client.endpoint}/v2/${client.project_id}/fgs/functions/{function_urn}`,
                 queryParams: {},
                 pathParams: {},
                 headers: {},
@@ -243,15 +287,23 @@ export const ParamCreater = function () {
             if(func_urn === null || func_urn === undefined) {
                 throw new RequiredError('function_urn', 'Required parameter function_urn')
             }
-            options.pathParams = { 'function_urn': func_urn}
+            options.url = options.url.replace('{function_urn}', func_urn);
+
+            let signer = require('./signer');
+            let https = require('https');
+            let sig = new signer.Signer();
+            sig.Key = client.ak;
+            sig.Secret = client.sk;
+            let r = new signer.HttpRequest(options.method, options.url);
+            r.headers =  {"Content-Type": "application/json"};
+            r.body = ''
+            let opt = sig.Sign(r);
+            
+            options.data = r.body;
+            options.headers = opt.headers;
             return options;
         }
     }
-}
-
-
-function newClient(client: HcClient): FunctionGraphClient {
-    return new FunctionGraphClient(client);
 }
 
 /**
